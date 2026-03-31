@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delici - For the love of delicious food</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar d-none d-lg-block">
+        <div class="container-fluid px-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="info-item me-4">
+                        <i class="fa-solid fa-location-dot gold-text me-2"></i>
+                        <span>Restaurant St, Delicious City, London 9578, UK</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-regular fa-clock gold-text me-2"></i>
+                        <span>Daily: 8:00 am to 10:00 pm</span>
+                    </div>
+                </div>
+                <div class="col-md-6 text-end d-flex align-items-center justify-content-end">
+                    <div class="info-item me-4">
+                        <i class="fa-solid fa-phone gold-text me-2"></i>
+                        <span>+1 123 456 7890</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-regular fa-envelope gold-text me-2"></i>
+                        <span>booking@restaurant.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="header-main">
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container-fluid px-5">
+                <!-- Hamburger Icon -->
+                <button class="menu-toggle border-0 bg-transparent text-white" type="button">
+                    <span class="navbar-toggler-icon d-none"></span>
+                    <i class="fa-solid fa-bars-staggered fs-4"></i>
+                </button>
+
+                <!-- Logo Centered -->
+                <a class="navbar-brand mx-auto" href="#">
+                    <img src="assets/images/logo.png" alt="Delici Logo" class="logo-img">
+                </a>
+
+                <!-- Find a Table Button -->
+                <div class="nav-right">
+                    <a href="#" class="btn btn-gold px-4 py-2 text-uppercase fw-semibold">Find a Table</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 animate-fadeIn">
+                    <p class="hero-subtitle text-uppercase gold-text mb-4">Delightful Experience</p>
+                    <div class="hero-divider mb-4">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCA1MCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCA1SDI0TTUyIDVIMjYiIHN0cm9rZT0iI0MxOUI2NyIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMjQiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDI0IDMpIiBmaWxsPSIjQzE5QjY3Ii8+PHJlY3QgeD0iMzAiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDMwIDMpIiBmaWxsPSIjQzE5QjY3Ii8+PC9zdmc+"
+                            alt="divider">
+                    </div>
+                    <h1 class="hero-title display-1 mb-4">For the love of <br> delicious food</h1>
+                    <p class="hero-description fs-5 mb-5 opacity-75">Come with family & feel the joy of mouthwatering
+                        food</p>
+                    <a href="#" class="btn btn-outline-gold px-5 py-3 text-uppercase fw-bold">View Our Menu</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Arrows -->
+        <button class="slider-arrow arrow-left">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="slider-arrow arrow-right">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <!-- Book A Table Floating Badge -->
+        <div class="floating-badge d-none d-md-flex">
+            <div class="badge-icon mb-2">
+                <i class="fa-solid fa-utensils gold-text"></i>
+            </div>
+            <span class="text-uppercase fw-bold small">Book A Table</span>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section py-5">
+        <div class="background-sketches"></div>
+        <div class="container py-5 text-center position-relative">
+            <p class="section-subtitle text-uppercase gold-text mb-2">Flavors For Royalty</p>
+            <div class="hero-divider mb-4">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCA1MCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCA1SDI0TTUyIDVIMjYiIHN0cm9rZT0iI0MxOUI2NyIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMjQiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDI0IDMpIiBmaWxsPSIjQzE5QjY3Ii8+PHJlY3QgeD0iMzAiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDMwIDMpIiBmaWxsPSIjQzE5QjY3Ii8+PC9zdmc+"
+                    alt="divider">
+            </div>
+            <h2 class="section-title display-4 mb-4">We Offer Top Notch</h2>
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6">
+                    <p class="section-description opacity-75">Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry lorem Ipsum has been the industry's standard dummy text ever.</p>
+                </div>
+            </div>
+
+            <div class="row g-5 feature-cards-row">
+                <!-- Breakfast Card -->
+                <div class="col-md-4 feature-card-item">
+                    <div class="pattern-header top-pattern mb-3"></div>
+                    <div class="feature-img-wrapper mb-4">
+                        <img src="assets/images/breakfast.png" alt="Breakfast" class="img-fluid rounded-1">
+                    </div>
+                    <div class="pattern-header bottom-pattern mb-4"></div>
+                    <h3 class="feature-name h4 mb-3">Breakfast</h3>
+                    <a href="#" class="view-menu-link text-uppercase fw-bold gold-text text-decoration-none small">View
+                        Menu</a>
+                </div>
+
+                <!-- Appetizers Card -->
+                <div class="col-md-4 feature-card-item mt-lg-5 pt-lg-5">
+                    <div class="pattern-header top-pattern mb-3"></div>
+                    <div class="feature-img-wrapper mb-4">
+                        <img src="assets/images/appetizers.png" alt="Appetizers" class="img-fluid rounded-1">
+                    </div>
+                    <div class="pattern-header bottom-pattern mb-4"></div>
+                    <h3 class="feature-name h4 mb-3">Appetizers</h3>
+                    <a href="#" class="view-menu-link text-uppercase fw-bold gold-text text-decoration-none small">View
+                        Menu</a>
+                </div>
+
+                <!-- Drinks Card -->
+                <div class="col-md-4 feature-card-item ">
+                    <div class="pattern-header top-pattern mb-3"></div>
+                    <div class="feature-img-wrapper mb-4">
+                        <img src="assets/images/drinks.png" alt="Drinks" class="img-fluid rounded-1">
+                    </div>
+                    <div class="pattern-header bottom-pattern mb-4"></div>
+                    <h3 class="feature-name h4 mb-3">Drinks</h3>
+                    <a href="#" class="view-menu-link text-uppercase fw-bold gold-text text-decoration-none small">View
+                        Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="story-section overflow-hidden">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <!-- Text Content Centered -->
+                <div class="col-lg-5 story-text animate-fadeIn text-center">
+                    <p class="section-subtitle text-uppercase gold-text mb-2">Our Story</p>
+                    <div class="hero-divider mb-4 d-flex justify-content-center">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCA1MCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCA1SDI0TTUyIDVIMjYiIHN0cm9rZT0iI0MxOUI2NyIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMjQiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDI0IDMpIiBmaWxsPSIjQzE5QjY3Ii8+PHJlY3QgeD0iMzAiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDMwIDMpIiBmaWxsPSIjQzE5QjY3Ii8+PC9zdmc+"
+                            alt="divider">
+                    </div>
+                    <h2 class="section-title display-3 mb-4">Every Flavor <br> Tells a Story</h2>
+                    <p class="story-description opacity-75 mb-5 mx-auto" style="max-width: 500px;">Lorem Ipsum is simply
+                        dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard
+                        dummy text ever since the when an unknown printer took a galley of type and scrambled it to make
+                        a type specimen book It has survived not only five centuries, but also the leap into.</p>
+
+                    <div class="booking-call mb-5">
+                        <p class="mb-1 small fw-bold text-uppercase">Book Through Call</p>
+                        <h4 class="gold-text fw-bold fs-2">+80 (400) 123 4567</h4>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-outline-gold px-5 py-3 text-uppercase fw-bold">Read More</a>
+                    </div>
+                </div>
+
+                <!-- Overlapping Images Right -->
+                <div class="col-lg-7 story-images-wrapper">
+                    <div class="position-relative">
+                        <!-- Background Circle/Badge -->
+                        <div class="stamp-badge">
+                            <i class="fa-solid fa-certificate fs-1 gold-text"></i>
+                            <div class="stamp-text-inner text-center">
+                                <span class="d-block small fw-bold">QUALITY FOOD</span>
+                                <span class="d-block h5 mb-0">SINCE 1950</span>
+                            </div>
+                        </div>
+
+                        <!-- Large Interior Image -->
+                        <div class="main-story-img mb-5 text-end">
+                            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80"
+                                alt="Restaurant Interior" class="img-fluid rounded-1 shadow-lg w-75">
+                        </div>
+
+                        <!-- Overlapping Chef Image -->
+                        <div class="chef-story-img">
+                            <div class="pattern-header top-pattern mb-0" style="width: 100px; height: 20px;"></div>
+                            <img src="assets/images/chef.jpg";
+                                alt="Chef Preparing Dish" class="img-fluid rounded-1 shadow-lg">
+                            <div class="pattern-header bottom-pattern mt-0" style="width: 100px; height: 20px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Special Dish Section -->
+        <section class="special-dish-section overflow-hidden">
+            <div class="row g-0 align-items-center">
+                <!-- Left Side: Large Image -->
+                <div class="col-lg-6 special-dish-img-side p-0">
+                    <img src="assets/images/appetizers.png" alt="Special Dish Illustration"
+                        class="w-100 h-100 object-fit-cover">
+                </div>
+
+                <!-- Right Side: Content -->
+                <div class="col-lg-6 special-dish-content-side p-5 p-lg-100 position-relative">
+                    <!-- Background Sketch Overlay -->
+                    <div class="background-sketches-mini"></div>
+
+                    <div class="content-inner animate-fadeIn">
+                        <div class="special-label d-flex align-items-center mb-3">
+                            <i class="fa-solid fa-bookmark gold-text me-3 fs-4"></i>
+                            <span class="text-uppercase gold-text fw-bold small tracking-wider">Special Dish</span>
+                        </div>
+
+                        <div class="hero-divider mb-4">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCA1MCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCA1SDI0TTUyIDVIMjYiIHN0cm9rZT0iI0MxOUI2NyIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMjQiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDI0IDMpIiBmaWxsPSIjQzE5QjY3Ii8+PHJlY3QgeD0iMzAiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDMwIDMpIiBmaWxsPSIjQzE5QjY3Ii8+PC9zdmc+"
+                            alt="divider">
+                        </div>
+
+                        <h2 class="section-title display-3 mb-4">Lobster Tortellini</h2>
+
+                        <p class="section-description opacity-75 mb-5">Lorem Ipsum is simply dummy text of the printing
+                            and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since
+                            the when an unknown printer took a galley of type.</p>
+
+                        <div class="pricing mb-5">
+                            <span class="text-decoration-line-through opacity-50 me-3 fs-5">$40.00</span>
+                            <span class="gold-text fw-bold fs-3">$20.00</span>
+                        </div>
+
+                        <a href="#" class="btn btn-outline-gold px-5 py-3 text-uppercase fw-bold mt-2">View All Menu</a>
+                    </div>
+
+                    <!-- Peaking Dish Image -->
+                    <div class="peaking-dish d-none d-lg-block">
+                        <img src="assets/images/breakfast.png" alt="Peaking Dish"
+                            class="img-fluid rounded-circle shadow-lg border border-dark border-3">
+                    </div>
+                </div>
+            </div>
+            <!-- Menu Section -->
+            <section class="menu-section pt-5 position-relative">
+            
+
+                <div class="container py-5 text-center position-relative z-1">
+                    <p class="section-subtitle text-uppercase gold-text mb-2">Special Selection</p>
+                    <div class="hero-divider mb-4">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCA1MCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCA1SDI0TTUyIDVIMjYiIHN0cm9rZT0iI0MxOUI2NyIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMjQiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDI0IDMpIiBmaWxsPSIjQzE5QjY3Ii8+PHJlY3QgeD0iMzAiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDMwIDMpIiBmaWxsPSIjQzE5QjY3Ii8+PC9zdmc+"
+                            alt="divider">
+                    </div>
+                    <h2 class="section-title display-4 mb-5">Delicious Menu</h2>
+
+                    <!-- Menu Tabs -->
+                    <ul class="nav menu-tabs justify-content-center mb-5 align-items-center">
+                        <li class="nav-item"><a class="nav-link active" href="#">Morning</a></li>
+                        <li class="nav-item px-2 gold-text">⬥</li>
+                        <li class="nav-item"><a class="nav-link" href="#">Weekday Lunch</a></li>
+                        <li class="nav-item px-2 gold-text">⬥</li>
+                        <li class="nav-item"><a class="nav-link" href="#">Dinner</a></li>
+                        <li class="nav-item px-2 gold-text">⬥</li>
+                        <li class="nav-item"><a class="nav-link" href="#">Wines</a></li>
+                    </ul>
+
+                    <div class="row g-4 text-start">
+                        <!-- Left Column -->
+                        <div class="col-md-6 px-lg-5">
+                            <!-- Item 1 -->
+                            <div class="menu-item d-flex align-items-start mb-5">
+                                <img src="assets/images/breakfast.png" alt="Greek Salad"
+                                    class="menu-thumb rounded-2 me-3">
+                                <div class="w-100">
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <h4 class="h5 mb-0 fw-bold">Greek Salad</h4>
+                                        <span class="gold-text fw-bold">$25.50</span>
+                                    </div>
+                                    <p class="small opacity-50 mb-0">Tomatoes, green bell pepper, sliced cucumber onion,
+                                        olives, and feta cheese.</p>
+                                </div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="menu-item d-flex align-items-start mb-5">
+                                <img src="assets/images/appetizers.png" alt="Lasagne" class="menu-thumb rounded-2 me-3">
+                                <div class="w-100">
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <div class="d-flex align-items-center">
+                                            <h4 class="h5 mb-0 fw-bold me-2">Lasagne</h4>
+                                            <span
+                                                class="badge bg-gold-outline text-uppercase tiny-badge">Seasonal</span>
+                                        </div>
+                                        <span class="gold-text fw-bold">$40.00</span>
+                                    </div>
+                                    <p class="small opacity-50 mb-0">Vegetables, cheeses, ground meats, tomato sauce,
+                                        seasonings and spices.</p>
+                                </div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="menu-item d-flex align-items-start mb-5">
+                                <img src="assets/images/hero-bg.png" alt="Butternut Pumpkin"
+                                    class="menu-thumb rounded-2 me-3">
+                                <div class="w-100">
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <h4 class="h5 mb-0 fw-bold">Butternut Pumpkin</h4>
+                                        <span class="gold-text fw-bold">$10.00</span>
+                                    </div>
+                                    <p class="small opacity-50 mb-0">Typesetting industry lorem Lorem Ipsum is simply
+                                        dummy text of the print.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column -->
+                        <div class="col-md-6 px-lg-5 border-start border-secondary border-opacity-25">
+                            <!-- Item 4 -->
+                            <div class="menu-item d-flex align-items-start mb-5">
+                                <img src="assets/images/appetizers.png" alt="Tokusen Wagyu"
+                                    class="menu-thumb rounded-2 me-3">
+                                <div class="w-100">
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <div class="d-flex align-items-center">
+                                            <h4 class="h5 mb-0 fw-bold me-2">Tokusen Wagyu</h4>
+                                            <span class="badge bg-gold-outline text-uppercase tiny-badge">New</span>
+                                        </div>
+                                        <span class="gold-text fw-bold">$39.00</span>
+                                    </div>
+                                    <p class="small opacity-50 mb-0">Vegetables, cheeses, ground meats, tomato sauce,
+                                        seasonings and spices.</p>
+                                </div>
+                            </div>
+                            <!-- Item 5 -->
+                            <div class="menu-item d-flex align-items-start mb-5">
+                                <img src="assets/images/drinks.png" alt="Olivas Rellenas"
+                                    class="menu-thumb rounded-2 me-3">
+                                <div class="w-100">
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <h4 class="h5 mb-0 fw-bold">Olivas Rellenas</h4>
+                                        <span class="gold-text fw-bold">$25.00</span>
+                                    </div>
+                                    <p class="small opacity-50 mb-0">Avocados with crab meat, red onion, crab salad
+                                        stuffed red bell pepper and green bell pepper.</p>
+                                </div>
+                            </div>
+                            <!-- Item 6 -->
+                            <div class="menu-item d-flex align-items-start mb-5">
+                                <img src="assets/images/appetizers.png" alt="Opu Fish"
+                                    class="menu-thumb rounded-2 me-3">
+                                <div class="w-100">
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <h4 class="h5 mb-0 fw-bold">Opu Fish</h4>
+                                        <span class="gold-text fw-bold">$49.00</span>
+                                    </div>
+                                    <p class="small opacity-50 mb-0">Vegetables, cheeses, ground meats, tomato sauce,
+                                        seasonings and spices.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="small opacity-50 mb-4">During winter daily from <span class="gold-text">7:00 pm to 9:00
+                            pm</span></p>
+                    <a href="#" class="btn btn-outline-gold px-5 py-3 text-uppercase fw-bold">View All Menu</a>
+                </div>
+                <!-- Specialties Section -->
+                <section class="specialties-section py-5">
+                    <div class="container py-5">
+                        <div class="specialties-container position-relative py-5 px-4 px-md-5">
+                            <!-- Vertical Pattern Borders (Pseudo-elements in CSS) -->
+                            <div class="pattern-border-left d-none d-lg-block"></div>
+                            <div class="pattern-border-right d-none d-lg-block"></div>
+
+                            <div class="text-center mb-5 position-relative z-1">
+                                <p class="section-subtitle text-uppercase gold-text mb-2 tracking-wider">Special Offer
+                                </p>
+                                <div class="hero-divider mb-4 d-flex justify-content-center">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCA1MCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCA1SDI0TTUyIDVIMjYiIHN0cm9rZT0iI0MxOUI2NyIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMjQiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDI0IDMpIiBmaWxsPSIjQzE5QjY3Ii8+PHJlY3QgeD0iMzAiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDMwIDMpIiBmaWxsPSIjQzE5QjY3Ii8+PC9zdmc+"
+                                        alt="divider">
+                                </div>
+                                <h2 class="section-title display-4 mb-5">Best Specialties</h2>
+                            </div>
+
+                            <!-- Slider Container -->
+                            <div class="row g-4 position-relative z-1">
+                                <!-- Nav Arrows -->
+                                <button class="slider-arrow-mini arrow-left">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </button>
+                                <button class="slider-arrow-mini arrow-right">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+
+                                <!-- Item 1 -->
+                                <div class="col-6 col-lg-3 specialty-item text-center">
+                                    <div class="specialty-img-wrapper mb-4">
+                                        <img src="assets/images/hero-bg.png" alt="Opu Fish" class="img-fluid rounded-1">
+                                    </div>
+                                    <h4 class="h5 mb-2 fw-bold">Opu Fish</h4>
+                                    <p class="tiny opacity-50 mb-3">Vegetables, cheeses, ground meats, tomato sauce,
+                                        seasonings...</p>
+                                    <span class="gold-text fw-bold">$12.00</span>
+                                </div>
+
+                                <!-- Item 2 -->
+                                <div class="col-6 col-lg-3 specialty-item text-center">
+                                    <div class="specialty-img-wrapper mb-4">
+                                        <img src="assets/images/breakfast.png" alt="Greek Salad"
+                                            class="img-fluid rounded-1">
+                                    </div>
+                                    <h4 class="h5 mb-2 fw-bold">Greek Salad</h4>
+                                    <p class="tiny opacity-50 mb-3">Avocados with crab meat, red onion, crab salad red
+                                        bell pepper...</p>
+                                    <span class="gold-text fw-bold">$39.00</span>
+                                </div>
+
+                                <!-- Item 3 -->
+                                <div class="col-6 col-lg-3 specialty-item text-center">
+                                    <div class="specialty-img-wrapper mb-4">
+                                        <img src="assets/images/appetizers.png" alt="Tokusen Wagyu"
+                                            class="img-fluid rounded-1">
+                                    </div>
+                                    <h4 class="h5 mb-2 fw-bold">Tokusen Wagyu</h4>
+                                    <p class="tiny opacity-50 mb-3">Tomatoes, green bell pepper, sliced cucumber onion,
+                                        olives...</p>
+                                    <span class="gold-text fw-bold">$45.00</span>
+                                </div>
+
+                                <!-- Item 4 -->
+                                <div class="col-6 col-lg-3 specialty-item text-center">
+                                    <div class="specialty-img-wrapper mb-4">
+                                        <img src="assets/images/drinks.png" alt="Butternut Pumpkin"
+                                            class="img-fluid rounded-1">
+                                    </div>
+                                    <h4 class="h5 mb-2 fw-bold">Butternut Pumpkin</h4>
+                                    <p class="tiny opacity-50 mb-3">Avocados with crab meat, red onion, crab salad
+                                        stuffed bell pepper...</p>
+                                    <span class="gold-text fw-bold">$15.00</span>
+                                </div>
+                            </div>
+
+                            <div class="text-center mt-5 position-relative z-1">
+                                <a href="#" class="btn btn-outline-gold px-5 py-3 text-uppercase fw-bold">View All
+                                    Menu</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Testimonials Section -->
+                <section class="testimonials-section py-5 position-relative">
+                    <div class="testimonial-overlay"></div>
+                    <div class="container py-5 text-center position-relative z-1">
+                        <div class="testimonial-quote-icon mb-4">
+                            <i class="fa-solid fa-quote-right gold-text fs-3"></i>
+                        </div>
+                        <div class="hero-divider mb-4 d-flex justify-content-center">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCA1MCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCA1SDI0TTUyIDVIMjYiIHN0cm9rZT0iI0MxOUI2NyIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMjQiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDI0IDMpIiBmaWxsPSIjQzE5QjY3Ii8+PHJlY3QgeD0iMzAiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDMwIDMpIiBmaWxsPSIjQzE5QjY3Ii8+PC9zdmc+"
+                                alt="divider">
+                        </div>
+                        <h2 class="testimonial-text display-6 mb-5 mx-auto"
+                            style="max-width: 800px; font-family: var(--font-serif); line-height: 1.6;">
+                            I wanted to thank you for inviting me down for that amazing dinner the other night. The food
+                            was extraordinary.
+                        </h2>
+
+                        <div class="testimonial-authors d-flex justify-content-center align-items-center mb-3">
+                            <img src="https://i.pravatar.cc/100?u=1" alt="Author 1"
+                                class="author-img author-small rounded-circle me-3 opacity-50">
+                            <div class="author-main text-center">
+                                <img src="https://i.pravatar.cc/150?u=2" alt="SAM JHONSON"
+                                    class="author-img author-large rounded-circle mb-3 border border-3 border-gold">
+                                <p class="gold-text text-uppercase fw-bold small mb-0 tracking-wider">Sam Jhonson</p>
+                            </div>
+                            <img src="https://i.pravatar.cc/100?u=3" alt="Author 3"
+                                class="author-img author-small rounded-circle ms-3 opacity-50">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Reservation & Contact Section (Floating Card) -->
+                <section class="reservation-section position-relative">
+                    <div class="container">
+                        <div class="reservation-card shadow-lg animate-fadeIn">
+                            <div class="row g-0">
+                                <!-- Reservation Form -->
+                                <div class="col-lg-7 reservation-form-side p-4 p-md-5">
+                                    <div class="text-center mb-4">
+                                        <h2 class="h1 fw-bold mb-2">Online Reservation</h2>
+                                        <p class="small opacity-75">Booking request <span
+                                                class="gold-text fw-bold">+88-123-123456</span> or fill out the order
+                                            form</p>
+                                    </div>
+                                    <form class="row g-3">
+                                        <div class="col-md-6"><input type="text" class="form-control"
+                                                placeholder="Your Name"></div>
+                                        <div class="col-md-6"><input type="text" class="form-control"
+                                                placeholder="Phone Number"></div>
+                                        <div class="col-md-4">
+                                            <select class="form-select">
+                                                <option>1 Person</option>
+                                                <option>2 Persons</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" class="form-control" placeholder="DD-MM-YYYY">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <select class="form-select">
+                                                <option>08:00 am</option>
+                                                <option>09:00 am</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12"><textarea class="form-control" rows="3"
+                                                placeholder="Message"></textarea></div>
+                                        <div class="col-12 mt-4 text-center">
+                                            <button type="submit"
+                                                class="btn btn-gold w-100 py-3 text-uppercase fw-bold">Book A
+                                                Table</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!-- Contact Info -->
+                                <div
+                                    class="col-lg-5 contact-info-side p-4 p-md-5 text-center d-flex flex-column justify-content-center">
+                                    <h2 class="h1 fw-bold mb-4">Contact Us</h2>
+                                    <div class="mb-4">
+                                        <p class="mb-1 text-uppercase small fw-bold">Booking Request</p>
+                                        <h4 class="gold-text fw-bold">+88-123-123456</h4>
+                                    </div>
+                                    <div class="divider-diamond gold-text mb-4">⬥</div>
+                                    <div class="mb-4">
+                                        <p class="mb-1 text-uppercase small fw-bold">Location</p>
+                                        <p class="small opacity-75">Restaurant St, Delicious City,<br>London 9578, UK
+                                        </p>
+                                    </div>
+                                    <div class="mb-4">
+                                        <p class="mb-1 text-uppercase small fw-bold">Lunch Time</p>
+                                        <p class="small opacity-75">Monday to Sunday<br>11.00 am - 2.30pm</p>
+                                    </div>
+                                    <div>
+                                        <p class="mb-1 text-uppercase small fw-bold">Dinner Time</p>
+                                        <p class="small opacity-75">Monday to Sunday<br>05.00 pm - 10.00pm</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Why Choose Us / Strengths Section -->
+                <section class="strength-section pt-200 pb-5">
+                    <div class="container text-center pt-5">
+                        <p class="section-subtitle text-uppercase gold-text mb-2 tracking-wider">Why Choose Us</p>
+                        <div class="hero-divider mb-4 d-flex justify-content-center">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCA1MCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCA1SDI0TTUyIDVIMjYiIHN0cm9rZT0iI0MxOUI2NyIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMjQiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDI0IDMpIiBmaWxsPSIjQzE5QjY3Ii8+PHJlY3QgeD0iMzAiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDMwIDMpIiBmaWxsPSIjQzE5QjY3Ii8+PC9zdmc+"
+                                alt="divider">
+                        </div>
+                        <h2 class="section-title display-4 mb-5">Our Strength</h2>
+
+                        <div class="row g-4 mt-4">
+                            <div class="col-md-3 col-6 strength-item">
+                                <div class="strength-card py-5 px-3">
+                                    <div class="strength-icon mb-4"><i class="fa-solid fa-lemon fs-1 gold-text"></i>
+                                    </div>
+                                    <h4 class="h5 mb-3 fw-bold">Hygienic Food</h4>
+                                    <p class="small opacity-50">Lorem Ipsum is simply dummy printing and typesetting.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 strength-item">
+                                <div class="strength-card py-5 px-3 border-gold-subtle">
+                                    <div class="strength-icon mb-4"><i
+                                            class="fa-solid fa-house-chimney fs-1 gold-text"></i></div>
+                                    <h4 class="h5 mb-3 fw-bold">Fresh Environment</h4>
+                                    <p class="small opacity-50">Lorem Ipsum is simply dummy printing and typesetting.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 strength-item">
+                                <div class="strength-card py-5 px-3">
+                                    <div class="strength-icon mb-4"><i class="fa-solid fa-hat-chef fs-1 gold-text"></i>
+                                    </div>
+                                    <h4 class="h5 mb-3 fw-bold">Skilled Chefs</h4>
+                                    <p class="small opacity-50">Lorem Ipsum is simply dummy printing and typesetting.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 strength-item">
+                                <div class="strength-card py-5 px-3">
+                                    <div class="strength-icon mb-4"><i
+                                            class="fa-solid fa-cake-candles fs-1 gold-text"></i></div>
+                                    <h4 class="h5 mb-3 fw-bold">Event & Party</h4>
+                                    <p class="small opacity-50">Lorem Ipsum is simply dummy printing and typesetting.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Fruit Elements -->
+                    <div class="floating-fruit-item kiwi-slice">
+                        <img src="https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?auto=format&fit=crop&w=300&q=80"
+                            alt="Kiwi Slice" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="floating-fruit-item small-spices">
+                        <img src="https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=300&q=80"
+                            alt="Spices" class="img-fluid rounded-circle">
+                    </div>
+                </section>
+
+                <!-- Events & Specials Section -->
+                <section class="events-specials-section">
+                    <div class="container-fluid p-0">
+                        <div class="row g-0">
+                            <!-- Left Column: Special Dishes -->
+                            <div class="col-lg-4 events-col flex-column-reverse flex-lg-column d-flex">
+                                <div
+                                    class="events-text-box p-5 text-center flex-grow-1 d-flex flex-column justify-content-center">
+                                    <p class="section-subtitle text-uppercase gold-text small mb-2 tracking-wider">Best
+                                        Menu</p>
+                                    <h2 class="h1 mb-3">Special Dishes</h2>
+                                    <p class="small opacity-50 mb-4 px-4">Lorem ipsum is simply dummy printing.</p>
+                                    <a href="#"
+                                        class="gold-text text-uppercase fw-bold small text-decoration-none border-bottom border-gold pb-1 align-self-center">View
+                                        Menu</a>
+                                </div>
+                                <div class="events-img-box">
+                                    <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=600&q=80"
+                                        alt="Sushi Special" class="w-100 h-100 object-fit-cover">
+                                </div>
+                            </div>
+
+                            <!-- Middle Column: Upcoming Events -->
+                            <div class="col-lg-4 events-col middle-event position-relative">
+                                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80"
+                                    alt="Dining Table" class="w-100 h-100 object-fit-cover">
+                                <div
+                                    class="middle-event-overlay p-5 text-center d-flex flex-column justify-content-end">
+                                    <div class="z-1 mb-4">
+                                        <p class="section-subtitle text-uppercase gold-text small mb-2 tracking-wider">
+                                            Latest</p>
+                                        <h2 class="h1 mb-3 text-white">Upcoming Events</h2>
+                                        <p class="small text-white opacity-75 mb-4 px-4">Simply dummy printing and
+                                            setting.</p>
+                                        <a href="#"
+                                            class="gold-text text-uppercase fw-bold small text-decoration-none border-bottom border-gold pb-1 align-self-center">Join
+                                            Event</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right Column: Chef Choice -->
+                            <div class="col-lg-4 events-col flex-column-reverse flex-lg-column d-flex">
+                                <div
+                                    class="events-text-box p-5 text-center flex-grow-1 d-flex flex-column justify-content-center">
+                                    <p class="section-subtitle text-uppercase gold-text small mb-2 tracking-wider">
+                                        Selected</p>
+                                    <h2 class="h1 mb-3">Chef Choice</h2>
+                                    <p class="small opacity-50 mb-4 px-4">Dummy printing lorem ipsum simply.</p>
+                                    <a href="#"
+                                        class="gold-text text-uppercase fw-bold small text-decoration-none border-bottom border-gold pb-1 align-self-center">View
+                                        Menu</a>
+                                </div>
+                                <div class="events-img-box">
+                                    <img src="assets/images/Chef choice.jpg" alt="Chef Choice" class="w-100 h-100 object-fit-cover">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Chef Section -->
+                <section class="chef-section py-5 position-relative overflow-hidden">
+                    <!-- Floating Cutting Board Decor -->
+                    <div class="floating-asset cutting-board-decor d-none d-lg-block">
+                        <img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?auto=format&fit=crop&w=300&q=80"
+                            alt="Cooking Decor" class="img-fluid">
+                    </div>
+
+                    <div class="container py-5 text-center position-relative z-1">
+                        <p class="section-subtitle text-uppercase gold-text mb-2 tracking-wider">Experienced Team</p>
+                        <div class="hero-divider mb-4 d-flex justify-content-center">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCA1MCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCA1SDI0TTUyIDVIMjYiIHN0cm9rZT0iI0MxOUI2NyIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMjQiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDI0IDMpIiBmaWxsPSIjQzE5QjY3Ii8+PHJlY3QgeD0iMzAiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDMwIDMpIiBmaWxsPSIjQzE5QjY3Ii8+PC9zdmc+"
+                                alt="divider">
+                        </div>
+                        <h2 class="section-title display-4 mb-5">Meet Our Chef</h2>
+
+                        <div class="row g-5 mt-4">
+                            <!-- Chef 1 -->
+                            <div class="col-lg-4 col-md-6 chef-card-item">
+                                <div class="chef-img-wrapper mb-4">
+                                     <img src="assets/images/Willium Joe.jpg" alt="Willium Joe" class="img-fluid rounded-1"> 
+                                </div>
+                                <div class="chef-info text-start">
+                                    <h4 class="h3 mb-2 fw-bold">Willium Joe</h4>
+                                    <p class="gold-text text-uppercase small fw-bold mb-3 tracking-wider">Master Chef
+                                    </p>
+                                    <p class="small opacity-50 mb-0">Lorem Ipsum is simply dummy printing and typeset
+                                        industry lorem Ipsum has been the industrys.</p>
+                                </div>
+                            </div>
+
+                            <!-- Chef 2 -->
+                            <div class="col-lg-4 col-md-6 chef-card-item">
+                                <div class="chef-img-wrapper mb-4">
+                                    <img src="assets/images/Steave Den.jpg" alt="Steave Den" class="img-fluid rounded-1">
+                                </div>
+                                <div class="chef-info text-start">
+                                    <h4 class="h3 mb-2 fw-bold">Steave Den</h4>
+                                    <p class="gold-text text-uppercase small fw-bold mb-3 tracking-wider">Master Chef
+                                    </p>
+                                    <p class="small opacity-50 mb-0">Lorem Ipsum is simply dummy printing and typeset
+                                        industry lorem Ipsum has been the industrys.</p>
+                                </div>
+                            </div>
+
+                            <!-- Chef 3 -->
+                            <div class="col-lg-4 col-md-6 chef-card-item">
+                                <div class="chef-img-wrapper mb-4">
+                                    <img src="assets/images/Lily Sopy.jpg" alt="Lily Sopy" class="img-fluid rounded-1">
+                                </div>
+                                <div class="chef-info text-start">
+                                    <h4 class="h3 mb-2 fw-bold">Lily Sopy</h4>
+                                    <p class="gold-text text-uppercase small fw-bold mb-3 tracking-wider">Master Chef
+                                    </p>
+                                    <p class="small opacity-50 mb-0">Lorem Ipsum is simply dummy printing and typeset
+                                        industry lorem Ipsum has been the industrys.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Video & Stats Section -->
+                <section class="video-section py-5 position-relative">
+                    <div class="video-overlay"></div>
+                    <div class="container py-100 text-center position-relative z-1">
+                        <p class="section-subtitle text-uppercase gold-text mb-2 tracking-wider">Amazing Experience</p>
+                        <div class="hero-divider mb-4 d-flex justify-content-center">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCA1MCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCA1SDI0TTUyIDVIMjYiIHN0cm9rZT0iI0MxOUI2NyIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMjQiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDI0IDMpIiBmaWxsPSIjQzE5QjY3Ii8+PHJlY3QgeD0iMzAiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDMwIDMpIiBmaWxsPSIjQzE5QjY3Ii8+PC9zdmc+"
+                                alt="divider">
+                        </div>
+                        <h2 class="section-title display-4 mb-5">Watch Our Video</h2>
+
+                        <!-- Play Button -->
+                        <div class="play-btn-wrapper mb-5">
+                            <a href="#" class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+
+                        <h3 class="video-quote h2 mb-4 mx-auto"
+                            style="max-width: 700px; font-family: var(--font-serif); line-height: 1.4;">
+                            A modern restaurant with a menu that will make your mouth water.
+                        </h3>
+                        <p class="gold-text text-uppercase small fw-bold mb-5 tracking-wider">Willium Joe - Master Chef
+                        </p>
+
+                        <!-- Pattern Divider -->
+                        <div class="pattern-divider-long mb-5"></div>
+
+                        <!-- Stats Grid -->
+                        <div class="row g-4 stats-grid mt-5">
+                            <div class="col-6 col-lg-3">
+                                <div class="stat-item d-flex align-items-center justify-content-center">
+                                    <span class="display-5 fw-bold me-2">150+</span>
+                                    <p class="small text-uppercase mb-0 text-start opacity-75">Daily<br>Order</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <div
+                                    class="stat-item d-flex align-items-center justify-content-center border-start border-secondary border-opacity-25 ps-lg-4">
+                                    <span class="display-5 fw-bold me-2">82+</span>
+                                    <p class="small text-uppercase mb-0 text-start opacity-75">Special<br>Dishes</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <div
+                                    class="stat-item d-flex align-items-center justify-content-center border-start border-secondary border-opacity-25 ps-lg-4">
+                                    <span class="display-5 fw-bold me-2">35+</span>
+                                    <p class="small text-uppercase mb-0 text-start opacity-75">Expert<br>Chef</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <div
+                                    class="stat-item d-flex align-items-center justify-content-center border-start border-secondary border-opacity-25 ps-lg-4">
+                                    <span class="display-5 fw-bold me-2">10+</span>
+                                    <p class="small text-uppercase mb-0 text-start opacity-75">Awards<br>Won</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Blog/Events Section -->
+                <section class="blog-section py-5 bg-black">
+                    <div class="container py-5 text-center">
+                        <p class="section-subtitle text-uppercase gold-text mb-2 tracking-wider">Recent Updates</p>
+                        <div class="hero-divider mb-4 d-flex justify-content-center">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCA1MCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCA1SDI0TTUyIDVIMjYiIHN0cm9rZT0iI0MxOUI2NyIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMjQiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDI0IDMpIiBmaWxsPSIjQzE5QjY3Ii8+PHJlY3QgeD0iMzAiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDMwIDMpIiBmaWxsPSIjQzE5QjY3Ii8+PC9zdmc+"
+                                alt="divider">
+                        </div>
+                        <h2 class="section-title display-4 mb-5">Upcoming Event</h2>
+
+                        <div class="row g-4 mt-4">
+                            <!-- Blog Case 1 -->
+                            <div class="col-lg-4 col-md-6 blog-card-item">
+                                <div class="blog-card position-relative overflow-hidden rounded-1">
+                                    <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=600&q=80"
+                                        alt="Blog 1" class="w-100 h-100 object-fit-cover">
+                                    <div
+                                        class="blog-overlay-info p-4 d-flex flex-column justify-content-end text-start">
+                                        <span class="blog-date gold-text small fw-bold mb-3">15/09/2022</span>
+                                        <p class="blog-cat text-uppercase gold-text tiny mb-2 tracking-wider">Food,
+                                            Flavour</p>
+                                        <h4 class="h5 text-white mb-0">Flavour so good you'll try to eat with your eyes.
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Blog Case 2 -->
+                            <div class="col-lg-4 col-md-6 blog-card-item">
+                                <div class="blog-card position-relative overflow-hidden rounded-1 border-gold-hover">
+                                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80"
+                                        alt="Blog 2" class="w-100 h-100 object-fit-cover">
+                                    <div
+                                        class="blog-overlay-info p-4 d-flex flex-column justify-content-end text-start">
+                                        <span class="blog-date gold-text small fw-bold mb-3">08/09/2022</span>
+                                        <p class="blog-cat text-uppercase gold-text tiny mb-2 tracking-wider">Healthy
+                                            Food</p>
+                                        <h4 class="h5 text-white mb-0">Flavour so good you'll try to eat with your eyes.
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Blog Case 3 -->
+                            <div class="col-lg-4 col-md-6 blog-card-item">
+                                <div class="blog-card position-relative overflow-hidden rounded-1">
+                                    <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=600&q=80"
+                                        alt="Blog 3" class="w-100 h-100 object-fit-cover">
+                                    <div
+                                        class="blog-overlay-info p-4 d-flex flex-column justify-content-end text-start">
+                                        <span class="blog-date gold-text small fw-bold mb-3">03/09/2022</span>
+                                        <p class="blog-cat text-uppercase gold-text tiny mb-2 tracking-wider">Recipie
+                                        </p>
+                                        <h4 class="h5 text-white mb-0">Flavour so good you'll try to eat with your eyes.
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-5">
+                            <a href="#" class="btn btn-outline-gold px-5 py-3 text-uppercase fw-bold">View Our Blog</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Footer Section -->
+                <footer class="footer-section position-relative">
+                    <div class="footer-overlay"></div>
+                    <div class="container position-relative z-1 py-100">
+                        <div class="row align-items-center g-5">
+                            <!-- Left Links -->
+                            <div class="col-lg-3 d-none d-lg-block">
+                                <ul class="list-unstyled footer-nav-links text-start">
+                                    <li class="mb-4"><a href="#"
+                                            class="text-uppercase tracking-wider text-decoration-none footer-link">Home</a>
+                                    </li>
+                                    <li class="mb-4"><a href="#"
+                                            class="text-uppercase tracking-wider text-decoration-none footer-link">Menus</a>
+                                    </li>
+                                    <li class="mb-4"><a href="#"
+                                            class="text-uppercase tracking-wider text-decoration-none footer-link">About
+                                            Us</a></li>
+                                    <li class="mb-4"><a href="#"
+                                            class="text-uppercase tracking-wider text-decoration-none footer-link">Our
+                                            Chefs</a></li>
+                                    <li class="mb-4"><a href="#"
+                                            class="text-uppercase tracking-wider text-decoration-none footer-link">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Center: Logo & Newsletter -->
+                            <div class="col-lg-6">
+                                <div class="footer-center-card p-5 text-center position-relative">
+                                    <!-- Pattern Borders -->
+                                    <div class="pattern-border-left"></div>
+                                    <div class="pattern-border-right"></div>
+
+                                    <div class="footer-logo mb-4">
+                                        <img src="assets/images/logo.png" alt="Delici" height="60">
+                                    </div>
+
+                                    <div class="footer-contact-info mb-5 opacity-75 small">
+                                        <p class="mb-2">Restaurant St, Delicious City, London 9578, UK</p>
+                                        <p class="mb-2">booking@domainname.com</p>
+                                        <p class="mb-2">Booking Request: <span class="gold-text">+88-123-123456</span>
+                                        </p>
+                                        <p class="mb-0">Open: 09:00 am - 01:00 pm</p>
+                                    </div>
+
+                                    <div class="hero-divider mb-4 d-flex justify-content-center">
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCA1MCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCA1SDI0TTUyIDVIMjYiIHN0cm9rZT0iI0MxOUI2NyIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMjQiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDI0IDMpIiBmaWxsPSIjQzE5QjY3Ii8+PHJlY3QgeD0iMzAiIHk9IjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDMwIDMpIiBmaWxsPSIjQzE5QjY3Ii8+PC9zdmc+"
+                                            alt="divider">
+                                    </div>
+
+                                    <h2 class="h2 mb-2">Get News & Offers</h2>
+                                    <p class="small opacity-50 mb-4">Subscribe us & Get <span class="gold-text">25%
+                                            Off</span>.</p>
+
+                                    <form class="footer-news-form d-flex">
+                                        <div class="input-group">
+                                            <span
+                                                class="input-group-text bg-black border-secondary border-opacity-25 text-white-50"><i
+                                                    class="fa-regular fa-envelope"></i></span>
+                                            <input type="email"
+                                                class="form-control bg-black border-secondary border-opacity-25 text-white"
+                                                placeholder="Your email">
+                                            <button class="btn btn-gold px-4 text-uppercase fw-bold"
+                                                type="submit">Subscribe</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- Right Links -->
+                            <div class="col-lg-3 d-none d-lg-block">
+                                <ul class="list-unstyled footer-nav-links text-end">
+                                    <li class="mb-4"><a href="#"
+                                            class="text-uppercase tracking-wider text-decoration-none footer-link">Facebook</a>
+                                    </li>
+                                    <li class="mb-4"><a href="#"
+                                            class="text-uppercase tracking-wider text-decoration-none footer-link">Instagram</a>
+                                    </li>
+                                    <li class="mb-4"><a href="#"
+                                            class="text-uppercase tracking-wider text-decoration-none footer-link">Twitter</a>
+                                    </li>
+                                    <li class="mb-4"><a href="#"
+                                            class="text-uppercase tracking-wider text-decoration-none footer-link">Youtube</a>
+                                    </li>
+                                    <li class="mb-4"><a href="#"
+                                            class="text-uppercase tracking-wider text-decoration-none footer-link">Google
+                                            Map</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="copyright-text text-center mt-5 pt-5 opacity-50 small">
+                            <p>&copy; 2022 Restaurt. All Rights Reserved | Crafted by <span class="gold-text">Kalanidhi
+                                    Themes</span></p>
+                        </div>
+                    </div>
+                </footer>
+
+                <!-- Scroll Top Button -->
+                <button class="scroll-top-btn" id="scrollTopBtn">
+                    <i class="fa-solid fa-chevron-up"></i>
+                </button>
+
+                <!-- Bootstrap JS -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                <!-- Custom JS -->
+                <script src="assets/js/script.js"></script>
+</body>
+
+</html>
